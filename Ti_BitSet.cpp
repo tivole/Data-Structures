@@ -1,7 +1,7 @@
 // (c) Tivole
 
 #include <iostream>
-#include "Ti_BitSet.h"
+#include "Ti_BitSet.hpp"
 
 using namespace std;
 
