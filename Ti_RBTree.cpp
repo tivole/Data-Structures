@@ -1,7 +1,7 @@
 // (c) Tivole
 
 #include <iostream>
-#include "Ti_RBTree.h"
+#include "Ti_RBTree.hpp"
 using namespace std;
 
 void Test_1();
