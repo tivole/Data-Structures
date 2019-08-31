@@ -406,12 +406,22 @@ void Ti_RBTree<Ti_Type>::Ti_Show(Ti_TreeNode<Ti_Type> *position, int level, Ti_T
 		if (invertor) cout<<"|     ";
 		else cout<<"      ";
 	}
-	if(position->color) cout << "|-[";
-	else cout << "|-(";
+	if(position->color) {
+		printf("\033[30m");
+		printf("\033[47m");
+		printf("\033[01m");
+		cout << "|-[";
+	} else {
+		printf("\033[31m");
+		printf("\033[47m");
+		printf("\033[01m");
+		cout << "|-(";
+	}
 	cout.width(2);
 
-	if(position->color) cout << position->value << "]|" << endl;
-	else cout << position->value << ")|" << endl;
+	if(position->color) cout << position->value << "]|\033[00m" << endl;
+	else cout << position->value << ")|\033[00m" << endl;
+
 
 	x[level] = 1;
 	Ti_Show(position->left, level + 1, x);
@@ -421,7 +431,7 @@ void Ti_RBTree<Ti_Type>::Ti_Show(Ti_TreeNode<Ti_Type> *position, int level, Ti_T
 template <class Ti_Type>
 void Ti_RBTree<Ti_Type>::Ti_Show() {
 	int N = size(root);
-	Ti_Type *x = new TiType[N];
+	Ti_Type *x = new Ti_Type[N];
 	for(int i = 0; i < N; i++) x[i] = 0;
 	Ti_Show(root, 0, x);
 	cout << endl;
