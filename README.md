@@ -36,3 +36,25 @@ A.ShowLR(); // To Left Right print
 A.ShowDU(); // To Down Up print
 ```
 
+---
+### How insertion works
+
+#### Initial state of the tree
+
+![Initial state of the tree](img/rbtree_1.png)
+
+#### Inserting 1
+
+![After inserting 1](img/rbtree_2.png)
+
+#### Inserting 18
+
+![After inserting 18](img/rbtree_3.png)
+
+#### Inserting 3
+
+![After inserting 3](img/rbtree_4.png)
+
+#### Inserting 16
+
+![After inserting 16](img/rbtree_5.png)
