@@ -5,7 +5,7 @@ A <b>red–black</b> tree is a kind of self-balancing binary search tree in comp
 
 ---
 
-### Properties
+## Properties
 In addition to the requirements imposed on a binary search tree the following must be satisfied by a red–black tree:
 
 1. Each node is either red or black.
@@ -16,7 +16,7 @@ In addition to the requirements imposed on a binary search tree the following mu
 
 ---
 
-### How to use
+## How to use
 
 ```cpp
 #include "Ti_RBTree.hpp" // To include Red Black Tree structure
@@ -37,7 +37,7 @@ A.ShowDU(); // To Down Up print
 ```
 
 ---
-### How insertion works
+## How insertion works
 
 #### Initial state of the tree
 
@@ -58,3 +58,23 @@ A.ShowDU(); // To Down Up print
 #### Inserting 16
 
 ![After inserting 16](img/rbtree_5.png)
+
+
+---
+## How removing works
+
+#### Initial state of the tree
+
+![Initial state of the tree](img/rbtree_rm_1.png)
+
+#### Removing 8
+
+![After removing 8](img/rbtree_rm_2.png)
+
+#### Removing 7
+
+![After removing 7](img/rbtree_rm_3.png)
+
+#### Removing 6
+
+![After removing 6](img/rbtree_rm_4.png)
