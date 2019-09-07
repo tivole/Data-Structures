@@ -24,7 +24,7 @@ int main() {
 
 void Test_1() {
 	cout << "\t\t\t\tTest 1 \n" << endl;
-	int i, j, grow = 0, element;
+	int i, j, element;
 	Ti_AVL_Tree avl;
 	for (i = 0; i < 20; i++) {
 
@@ -54,7 +54,7 @@ void Test_1() {
 void Test_2() {
 	cout << "\t\t\t\tTest 2 " << endl;
 	Ti_AVL_Tree avl;
-	int i, grow = 0;
+	int i;
 	for(i = 0; i < 100000; i++) {
 		avl.AddElement(i);
 	}
