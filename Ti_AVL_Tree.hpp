@@ -15,6 +15,8 @@ class Ti_Node {
 
 class Ti_AVL_Tree {
 
+	Ti_Node *root;
+
 	void Ti_Show(Ti_Node *position, int level, int *x);
 	int size(Ti_Node *node);
 	void DeleteAll(Ti_Node*);
@@ -24,20 +26,26 @@ class Ti_AVL_Tree {
 	Ti_Node *Rebuild_R1(Ti_Node*);
 	Ti_Node *Rebuild_R2(Ti_Node*);
 
-public:
+	void UpDown(Ti_Node*);
+	void LeftRight(Ti_Node*);
+	void DownUp(Ti_Node*);
 
-	Ti_Node *root;
+	Ti_Node *AddElement(int, Ti_Node*, int*);
+	Ti_Node *DeleteElement(int, Ti_Node*, int*);
+
+public:
 
 	Ti_AVL_Tree();
 	~Ti_AVL_Tree();
 
-	void UpDown(Ti_Node*);
-	void LeftRight(Ti_Node*);
-	void DownUp(Ti_Node*);
 	void Ti_Show();
+	void UpDown();
+	void LeftRight();
+	void DownUp();
 
-	Ti_Node *AddElement(int, Ti_Node*, int*);
-	Ti_Node *DeleteElement(int, Ti_Node*, int*);
+	void AddElement(int);
+	void DeleteElement(int);
+	
 };
 
 void Ti_AVL_Tree::DeleteAll(Ti_Node *position) {
@@ -53,6 +61,28 @@ Ti_AVL_Tree::Ti_AVL_Tree() {
 
 Ti_AVL_Tree::~Ti_AVL_Tree() {
 	DeleteAll(root);
+}
+
+void Ti_AVL_Tree::UpDown() {
+	UpDown(root);
+}
+
+void Ti_AVL_Tree::LeftRight() {
+	LeftRight(root);
+}
+
+void Ti_AVL_Tree::DownUp() {
+	DownUp(root);
+}
+
+void Ti_AVL_Tree::AddElement(int element) {
+	int grow;
+	root = AddElement(element, root, &grow);
+}
+
+void Ti_AVL_Tree::DeleteElement(int element) {
+	int grow;
+	root = DeleteElement(element, root, &grow);
 }
 
 void Ti_AVL_Tree::UpDown(Ti_Node *x) {

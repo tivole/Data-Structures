@@ -31,7 +31,8 @@ void Test_1() {
 		if (i%2) element = i;
 		else element = 20 - i;
 
-		avl.root = avl.AddElement(element, avl.root, &grow);
+		// avl.root = avl.AddElement(element, avl.root, &grow);
+		avl.AddElement(element);
 
 		cout << endl;
 		for(j = 0; j < 80; j++) cout << "-";
@@ -39,11 +40,11 @@ void Test_1() {
 		cout << "Adding " << element;
 
 		cout << endl << " Up Down: ";
-		avl.UpDown(avl.root);
+		avl.UpDown();
 		cout << endl << " Left Right: ";
-		avl.LeftRight(avl.root);
+		avl.LeftRight();
 		cout << endl << " Down Up: ";
-		avl.DownUp(avl.root);
+		avl.DownUp();
 
 		avl.Ti_Show();
 	}
@@ -55,14 +56,13 @@ void Test_2() {
 	Ti_AVL_Tree avl;
 	int i, grow = 0;
 	for(i = 0; i < 100000; i++) {
-		avl.root = avl.AddElement(i, avl.root, &grow);
-		avl.root = avl.AddElement(i, avl.root, &grow);
-
+		avl.AddElement(i);
 	}
 	for(i = 20; i < 100000; i++) {
-		avl.root = avl.DeleteElement(i, avl.root, &grow);
+		// avl.root = avl.DeleteElement(i, avl.root, &grow);
+		avl.DeleteElement(i);
 	}
 	cout << endl;
-	avl.LeftRight(avl.root);
+	avl.LeftRight();
 	avl.Ti_Show();
 }
