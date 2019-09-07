@@ -16,7 +16,7 @@ In addition to the requirements imposed on a binary search tree the following mu
 
 ---
 
-## How to use
+## Usage
 
 ```cpp
 #include "Ti_RBTree.hpp" // To include Red Black Tree structure
@@ -29,11 +29,11 @@ RBTree.DeleteElement(key); // To delete element
 
 RBTree.Ti_Show(); // To "beautiful" print
 
-A.ShowUD(); // To Up Down print
+RBTree.ShowUD(); // To Up Down print
 
-A.ShowLR(); // To Left Right print
+RBTree.ShowLR(); // To Left Right print
 
-A.ShowDU(); // To Down Up print
+RBTree.ShowDU(); // To Down Up print
 ```
 
 ---
