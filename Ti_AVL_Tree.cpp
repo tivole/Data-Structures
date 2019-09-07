@@ -55,12 +55,13 @@ void Test_2() {
 	cout << "\t\t\t\tTest 2 " << endl;
 	Ti_AVL_Tree avl;
 	int i;
-	for(i = 0; i < 100000; i++) {
-		avl.AddElement(i);
+	int list[] = {20, 1, 18, 3, 16, 5, 14, 7, 12};
+	int rem[] = {7, 20};
+	for(i = 0; i < 9; i++) {
+		avl.AddElement(list[i]);
 	}
-	for(i = 20; i < 100000; i++) {
-		// avl.root = avl.DeleteElement(i, avl.root, &grow);
-		avl.DeleteElement(i);
+	for(i = 0; i < 2; i++) {
+		avl.DeleteElement(rem[i]);
 	}
 	cout << endl;
 	avl.LeftRight();

@@ -11,6 +11,7 @@ AVL Tree Data Structure
   <img width="70%" height="70%" src="img/formulas/avl_tree.svg">
 </p>
 
+---
 
 ## Properties
 
@@ -81,3 +82,18 @@ Inserting <b>12</b>
 
 ![After inserting 12](img/insert_screen/insert_5.png)
 
+---
+
+## Removing examples
+
+Initial state of the tree
+
+![Initial state of the tree](img/remove_screen/rem_1.png)
+
+Removing <b>7</b>
+
+![After removing 7](img/remove_screen/rem_2.png)
+
+Removing <b>20</b>
+
+![After removing 20](img/remove_screen/rem_3.png)
