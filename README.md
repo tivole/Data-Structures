@@ -11,15 +11,6 @@ AVL Tree Data Structure
   <img width="70%" height="70%" src="img/avl_tree.svg">
 </p>
 
-| Operation     | Average       | Worst case   |
-| ------------- | ------------- | ------------ |
-| Space         | **O(n)**      | **O(n)**     |
-| Search        | **O(log n)**  | **O(log n)** |
-| Insert        | **O(log n)**  | **O(log n)** |
-| Delete        | **O(log n)**  | **O(log n)** |
-
-
-
 
 ## Properties
 
@@ -33,3 +24,39 @@ The height ![h](img/h.gif) of an AVL tree with ![n](img/n.gif) nodes lies in the
 
 
 with the golden ratio φ := ![one_plus_sqrt5_div_2](img/one_plus_sqrt5_div_2.gif) ≈ 1.618, c := ![one_div_log2_varphi](img/one_div_log2_varphi.gif) ≈ 1.44,  and  b := ![cdiv2_log2_5](img/cdiv2_log2_5.gif) – 2 ≈ –0.328. This is because an AVL tree of height h contains at least ![F_hplus2](img/F_hplus2.gif) – 1 nodes where {![F_h](img/F_h.gif)} is the Fibonacci sequence with the seed values ![F_1](img/F_1.gif) = 1, ![F_2](img/F_2.gif) = 1.
+
+
+| Operation     | Average       | Worst case   |
+| ------------- | ------------- | ------------ |
+| Space         | **O(n)**      | **O(n)**     |
+| Search        | **O(log n)**  | **O(log n)** |
+| Insert        | **O(log n)**  | **O(log n)** |
+| Delete        | **O(log n)**  | **O(log n)** |
+
+
+---
+
+## Usage
+
+```cpp
+#include "Ti_AVL_Tree.hpp" // To include AVL Tree structure
+
+Ti_AVL_Tree AVLTree; // To initialize AVL Tree
+
+AVLTree.AddElement(key); // To insert element
+
+AVLTree.DeleteElement(key); // To delete element
+
+AVLTree.Ti_Show(); // To "beautiful" print
+
+AVLTree.ShowUD(); // To Up Down print
+
+AVLTree.ShowLR(); // To Left Right print
+
+AVLTree.ShowDU(); // To Down Up print
+
+```
+
+---
+
+## Insertion examples
