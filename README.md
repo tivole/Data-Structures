@@ -9,3 +9,4 @@ Data structures that I coded
 5. [Binary Tree](Ti_BinaryTree/README.md)
 6. [BitSet](Ti_BitSet/README.md)
 7. [Dynamic Array](Ti_DynamicArray/README.md)
+8. [Hash Table](Ti_HashProb/README.md)
