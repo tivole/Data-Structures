@@ -9,6 +9,7 @@ In computer science, a <b>binary tree</b> is an hierarchical data structure form
   <img width="70%" height="70%" src="img/binary_tree.jpg">
 </p>
 
+
 ### Important Terms:
 
 Following are the important terms with respect to tree.
@@ -23,3 +24,11 @@ Following are the important terms with respect to tree.
 * <b>Traversing</b> − Traversing means passing through nodes in a specific order.
 * <b>Levels</b> − Level of a node represents the generation of a node. If the root node is at level 0, then its next child node is at level 1, its grandchild is at level 2, and so on.
 * <b>Keys</b> − Key represents a value of a node based on which a search operation is to be carried out for a node.
+
+### Binary Search Tree Representation
+
+Binary Search tree exhibits a special behavior. A node's left child must have a value less than its parent's value and the node's right child must have a value greater than its parent value.
+
+<p align="center">
+  <img width="70%" height="70%" src="img/binary_search_tree.jpg">
+</p>
