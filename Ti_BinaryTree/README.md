@@ -32,3 +32,24 @@ Binary Search tree exhibits a special behavior. A node's left child must have a 
 <p align="center">
   <img width="70%" height="70%" src="img/binary_search_tree.jpg">
 </p>
+
+
+## Usage
+
+```cpp
+#include "Ti_BinaryTree.hpp" // To include Red Black Tree structure
+
+Ti_Tree<int> Binary_Tree; // To initialize Red Black Tree
+
+Binary_Tree.AddElement(key); // To insert element
+
+Binary_Tree.DeleteElement(key); // To delete element
+
+Binary_Tree.Ti_Show(); // To "beautiful" print
+
+Binary_Tree.ShowUD(); // To Up Down print
+
+Binary_Tree.ShowLR(); // To Left Right print
+
+Binary_Tree.ShowDU(); // To Down Up print
+```
